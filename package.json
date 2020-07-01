@@ -1,5 +1,5 @@
 {
-  "name": "sticky",
+  "name": "2020-pi-camp",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,10 +10,10 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "description": "Website design - Small project for high school assignment.",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FooJiaYin/Sticky.git"
+    "url": "git+https://github.com/FooJiaYin/2020-pi-camp.git"
   },
   "keywords": [
     "sticky",
@@ -21,7 +21,7 @@
   ],
   "author": "Foo Jia Yin",
   "bugs": {
-    "url": "https://github.com/FooJiaYin/Sticky/issues"
+    "url": "https://github.com/FooJiaYin/2020-pi-camp/issues"
   },
-  "homepage": "https://github.com/FooJiaYin/Sticky#readme"
+  "homepage": "https://github.com/FooJiaYin/2020-pi-camp#readme"
 }
