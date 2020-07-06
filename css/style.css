@@ -1,3 +1,8 @@
+@font-face {
+  font-family: open-huninn;
+  src: url('../font/open-huninn.ttf') format('truetype');
+}
+
 html {
   font-size: 16px;
 }
@@ -5,6 +10,12 @@ html {
   box-sizing: border-box;
   transition-duration: 0.5s;
 }
+
+h1, h2 {
+  font-family: open-huninn;
+  font-weight: normal;
+}
+
 h2 {
   text-align: center;
   font-size: 3rem;
@@ -157,6 +168,11 @@ img {
   margin-bottom: 0px;
 }
 
+#course-section ul {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 #course-section {
   padding-top: 100px;
 }
@@ -168,7 +184,7 @@ img {
 #course-section .nav-item a {
   color: #000000;
   opacity: 0.3;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 #course-section .nav-item a.active,
 #course-section .nav-item a:hover {
@@ -227,6 +243,8 @@ img {
 .tab-pane .container {
   padding-top: 80px;
   padding-bottom: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .tab-pane h3.course-name {
@@ -329,6 +347,11 @@ img {
   box-shadow: rgba(0, 0, 0, 0.1) 2px 20px 30px -10px;
 }
 
+#pricing-section, #faq-section .container {
+    padding-left: 15%;
+    padding-right: 15%;
+} 
+
 #pricing-section.shape-bg-2 {
   background: url(../img/bg_shape-2.svg);
   background-size: 100%;
@@ -357,4 +380,9 @@ img {
 }
 #pricing-section span.bignum {
   font-size: 1.5em;
+}
+
+#footer-section {
+    background-color: rgba(28, 27, 113, 0.619792);  
+    color: white;
 }
