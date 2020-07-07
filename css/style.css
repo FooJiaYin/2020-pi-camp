@@ -48,6 +48,14 @@ img {
   color: white;
 }
 
+section {
+  margin: 100px 0;
+}
+
+#hero-section {
+  margin-top: 0;
+}
+
 #hero-section .container {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -101,6 +109,11 @@ img {
   padding-top: 50px;
   text-align: center;
 }
+
+.feature-item:hover * {
+  color: rgba(28, 27, 113, 0.619792);
+}
+
 .feature-item * {
   color: #000000;
 }
@@ -179,6 +192,7 @@ img {
 
 #course-section h2 {
   margin-bottom: 180px;
+  color: gray;
 }
 
 #course-section .nav-item a {
@@ -348,9 +362,17 @@ img {
 }
 
 @media (min-width: 992px) {
-    #pricing-section, #faq-section .container {
+    #pricing-section .container, #faq-section .container {
         max-width: 890px;
     }
+}
+
+#pricing-section h2, #faq-section h2 {
+  padding: 3rem 0;  
+  color: gray;
+  /* background: linear-gradient(#ef383b88, #f4ce2288);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 #pricing-section.shape-bg-2 {
@@ -360,9 +382,6 @@ img {
   background-position: 100% 50%;
 }
 
-#pricing-section h2 {
-  padding: 100px 0px;
-}
 #pricing-section .card {
   text-align: center;
   border-radius: 20px;
@@ -381,6 +400,13 @@ img {
 }
 #pricing-section span.bignum {
   font-size: 1.5em;
+}
+
+
+
+#faq-section p {
+  line-height: 1.7em;
+  margin-bottom: 1.7em;
 }
 
 #registration-section a.btn {
@@ -413,6 +439,7 @@ img {
 #footer-section {
     background-color: rgba(28, 27, 113, 0.619792);
     padding: 70px 0;
+    margin-bottom: 0;
 }
 
 #footer-section * {
