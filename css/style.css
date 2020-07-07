@@ -339,7 +339,7 @@ section {
   font-weight: bold;
   font-size: 1.25rem;
   letter-spacing: 2px;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
   border-top: none;
   color: #666666;
 }
@@ -356,7 +356,7 @@ section {
 .course-timetable td,
 #pricing-section td {
   color: #000000;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   border-top: none;
 }
 
