@@ -63,7 +63,7 @@ img {
   font-size: 1.25rem;
 }
 
-#hero-section a.btn {
+#hero-section a.btn{
   border-radius: 100px;
   font-size: 1.25rem;
   letter-spacing: 4px;
@@ -347,10 +347,11 @@ img {
   box-shadow: rgba(0, 0, 0, 0.1) 2px 20px 30px -10px;
 }
 
-#pricing-section, #faq-section .container {
-    padding-left: 15%;
-    padding-right: 15%;
-} 
+@media (min-width: 992px) {
+    #pricing-section, #faq-section .container {
+        max-width: 890px;
+    }
+}
 
 #pricing-section.shape-bg-2 {
   background: url(../img/bg_shape-2.svg);
@@ -382,7 +383,52 @@ img {
   font-size: 1.5em;
 }
 
+#registration-section a.btn {
+  /* border-radius: 100px; */  
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 1rem 2rem;
+  border: 2px solid;
+  /* padding: 2px; */
+  width: fit-content;
+}
+
+#registration-section a.btn {  
+  border-image-source: linear-gradient(#ef383b88, #f4ce2288);
+  border-image-slice: 20;
+  background-clip: border-box;
+  background: linear-gradient(#ef383b88, #f4ce2288);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#registration-section a.btn:hover {
+  background: linear-gradient(#ef383b88, #f4ce2288);
+  background-clip: padding-box;
+  -webkit-text-fill-color: white;
+}
+
 #footer-section {
-    background-color: rgba(28, 27, 113, 0.619792);  
+    background-color: rgba(28, 27, 113, 0.619792);
+    padding: 70px 0;
+}
+
+#footer-section * {
     color: white;
+}
+
+#footer-section .row {
+    margin: 30px 0;
+}
+
+#footer-section h4 {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.footer-logo {
+    padding-right: 0;
 }
