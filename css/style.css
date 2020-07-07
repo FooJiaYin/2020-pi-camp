@@ -110,8 +110,13 @@ section {
   text-align: center;
 }
 
-.feature-item:hover * {
-  color: rgba(28, 27, 113, 0.619792);
+.feature-item:hover *, #faq-section p:hover, #faq-section p:hover *, tr:hover * {
+  color: rgba(28, 27, 113, 0.619792) !important;
+}
+
+.bubble-bg:hover * {
+  color: rgba(28, 27, 113, 0.619792) !important;
+  font-weight: bold;
 }
 
 .feature-item * {
@@ -257,8 +262,6 @@ section {
 .tab-pane .container {
   padding-top: 80px;
   padding-bottom: 100px;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .tab-pane h3.course-name {
@@ -362,7 +365,7 @@ section {
 }
 
 @media (min-width: 992px) {
-    #pricing-section .container, #faq-section .container {
+    .tab-pane .container, #pricing-section .container, #faq-section .container {
         max-width: 890px;
     }
 }
