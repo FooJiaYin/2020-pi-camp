@@ -347,10 +347,16 @@ img {
   box-shadow: rgba(0, 0, 0, 0.1) 2px 20px 30px -10px;
 }
 
+<<<<<<< HEAD
 @media (min-width: 992px) {
     #pricing-section, #faq-section .container {
         max-width: 890px;
     }
+=======
+#pricing-section, #faq-section .container {
+    padding-left: 15%;
+    padding-right: 15%;
+>>>>>>> 4aadf2bbcd0b4180b5493f76e49714a2e156d8e8
 } 
 
 #pricing-section.shape-bg-2 {
@@ -383,6 +389,7 @@ img {
   font-size: 1.5em;
 }
 
+<<<<<<< HEAD
 #registration-section a.btn {
   /* border-radius: 100px; */  
   font-size: 1.25rem;
@@ -432,3 +439,9 @@ img {
 .footer-logo {
     padding-right: 0;
 }
+=======
+#footer-section {
+    background-color: rgba(28, 27, 113, 0.619792);  
+    color: white;
+}
+>>>>>>> 4aadf2bbcd0b4180b5493f76e49714a2e156d8e8
