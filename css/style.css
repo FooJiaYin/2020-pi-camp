@@ -1,11 +1,12 @@
 @font-face {
   font-family: open-huninn;
-  src: url('../font/open-huninn.ttf') format('truetype');
+  src: url("../font/open-huninn.ttf") format("truetype");
 }
 
 html {
   font-size: 16px;
 }
+
 * {
   box-sizing: border-box;
   transition-duration: 0.5s;
@@ -21,6 +22,7 @@ h2 {
   font-size: 3rem;
   line-height: 3.5rem;
 }
+
 *,
 p,
 li {
@@ -31,19 +33,28 @@ li {
   letter-spacing: 2px;
 }
 
+.--scroll-x {
+  display: block;
+  overflow-x: scroll;
+  max-width: 100%;
+}
+
+.--scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
 img {
   max-height: 100%;
   max-width: 100%;
 }
 
 .gradient-bg {
-  background: linear-gradient(
-    180deg,
-    #190060 0%,
-    rgba(28, 27, 113, 0.619792) 56.77%,
-    rgba(33, 70, 142, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      #190060 0%,
+      rgba(28, 27, 113, 0.619792) 56.77%,
+      rgba(33, 70, 142, 0) 100%);
 }
+
 .gradient-bg * {
   color: white;
 }
@@ -61,7 +72,7 @@ section {
   padding-bottom: 100px;
 }
 
-#hero-section h1 {
+h1 {
   font-weight: bold;
   font-size: 3.5rem;
   margin-bottom: 20px;
@@ -69,39 +80,38 @@ section {
 
 #hero-section p {
   font-size: 1.25rem;
+  margin-bottom: 3em;
 }
 
-#hero-section a.btn{
+a.btn.reg-btn {
   border-radius: 100px;
   font-size: 1.25rem;
   letter-spacing: 4px;
   border: white solid 2px;
   padding: 1rem 2rem;
 }
-#hero-section a.btn:hover {
+
+/* button animation */
+a.btn.reg-btn:hover {
   border: white solid 2px;
   background-color: white;
 }
-#hero-section a.btn:focus {
+
+a.btn.reg-btn:focus {
   opacity: 0.5;
 }
 
-.hero-right-image {
+div.hero-right-image {
   height: 400px;
   text-align: right;
 }
-#feature-section {
-  padding-bottom: 30px;
-}
 
-#feature-section h2 {
+/* feature-section */
+h2.feature-title {
   padding-bottom: 50px;
 }
 
-.feature-item.offset-top {
-  margin-top: 60px;
-}
-.feature-item {
+div.feature-item {
   background: #ffffff;
   box-shadow: 0px 20px 40px rgba(74, 127, 131, 0.1);
   border-radius: 31px;
@@ -133,47 +143,64 @@ section {
 .feature-item p {
   font-size: 1rem;
 }
-.shape-bg {
+
+/* intro-section */
+section.shape-bg {
   background-image: url(../img/bg_intro_section.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 
-#intro-section .container {
+div.intro-section-padding {
   padding-top: 100px;
   padding-bottom: 50px;
 }
+
 #intro-section h2 {
   font-weight: bold;
 }
 
-.teams > div {
+h2.intro-title {
+  margin-bottom: 1em;
+}
+
+p.course_name {
+  margin-bottom: 0;
+}
+
+div.team {
   min-width: 215px;
   max-width: 100%;
 }
-.team-bg {
+
+div.team-logo {
   height: 160px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.team-1 .team-bg {
+.team-1 div.team-logo {
   background-image: url(../img/logo_team-1.png);
 }
-.team-2 .team-bg {
+
+.team-2 div.team-logo {
   background-image: url(../img/logo_team-2.png);
 }
-.team-3 .team-bg {
+
+.team-3 div.team-logo {
   background-image: url(../img/logo_team-3.png);
 }
-.team-4 .team-bg {
+
+.team-4 div.team-logo {
   background-image: url(../img/logo_team-4.png);
 }
-.team-5 .team-bg {
+
+.team-5 div.team-logo {
   background-image: url(../img/logo_team-5.png);
 }
-.bubble-bg {
+
+div.bubble-bg {
   height: 100px;
   background-image: url(../img/bg_dialogue_bubble.svg);
   background-size: contain;
@@ -182,8 +209,10 @@ section {
   text-align: center;
   padding-top: 25px;
 }
-.bubble-bg p {
-  margin-bottom: 0px;
+
+/* course section */
+.course-section-padding {
+  padding-top: 100px;
 }
 
 #course-section ul {
@@ -191,71 +220,94 @@ section {
     padding-right: 10%;
 }
 
-#course-section {
+.courses {
   padding-top: 100px;
 }
 
 #course-section h2 {
-  margin-bottom: 180px;
+  margin-bottom: 80px;
   color: gray;
 }
 
-#course-section .nav-item a {
+.courses .nav-item a {
   color: #000000;
   opacity: 0.3;
   font-size: 1.2rem;
 }
-#course-section .nav-item a.active,
-#course-section .nav-item a:hover {
+
+.courses .nav-item a.active,
+.courses .nav-item a:hover {
   opacity: 1;
   text-decoration: none;
 }
-@media only screen and (max-width: 820px) {
-  .nav-tabs {
-    flex-direction: column;
-  }
+
+.nav-tabs {
+  border-bottom: none;
 }
-@media only screen and (min-width: 820px) {
-  .nav-tabs {
-    border-bottom: none;
+
+.nav-item>hr {
+  border-radius: 10px 10px 0px 0px;
+  margin-top: -85px;
+  margin-bottom: 0px;
+  border-top: #00000000 10px solid;
+  height: 100px;
+  transition-duration: 0.5s;
+}
+
+/* different color top-border */
+.course-1.nav-item a:hover+hr,
+.course-1.nav-item a.active+hr {
+  border-top: #ef383b 10px solid;
+}
+
+.course-2.nav-item a:hover+hr,
+.course-2.nav-item a.active+hr {
+  border-top: #f4ce22 10px solid;
+}
+
+.course-3.nav-item a:hover+hr,
+.course-3.nav-item a.active+hr {
+  border-top: #9a4aff 10px solid;
+}
+
+.course-4.nav-item a:hover+hr,
+.course-4.nav-item a.active+hr {
+  border-top: #47a7ff 10px solid;
+}
+
+.course-5.nav-item a:hover+hr,
+.course-5.nav-item a.active+hr {
+  border-top: #04aa58 10px solid;
+}
+
+.nav-item a.active+hr,
+.tab-pane.active {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px -20px 30px -10px;
+}
+
+/* RWD: scrollable tab bar */
+@media only screen and (max-width: 920px) {
+  ul.courses {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
   }
 
-  .nav-tabs .nav-item {
-    margin-bottom: 0;
-  }
-  .nav-item > hr {
-    border-radius: 10px 10px 0px 0px;
-    margin-top: -85px;
-    margin-bottom: 0px;
-    border-top: #00000000 10px solid;
-    height: 100px;
-    transition-duration: 0.5s;
-  }
-  .course-1.nav-item a:hover + hr,
-  .course-1.nav-item a.active + hr {
-    border-top: #ef383b 10px solid;
-  }
-  .course-2.nav-item a:hover + hr,
-  .course-2.nav-item a.active + hr {
-    border-top: #f4ce22 10px solid;
-  }
-  .course-3.nav-item a:hover + hr,
-  .course-3.nav-item a.active + hr {
-    border-top: #9a4aff 10px solid;
-  }
-  .course-4.nav-item a:hover + hr,
-  .course-4.nav-item a.active + hr {
-    border-top: #47a7ff 10px solid;
-  }
-  .course-5.nav-item a:hover + hr,
-  .course-5.nav-item a.active + hr {
-    border-top: #04aa58 10px solid;
+  ul.courses::-webkit-scrollbar {
+    display: none;
   }
 
-  .nav-item a.active + hr,
-  .tab-pane.active {
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 2px -20px 30px -10px;
+  .courses .nav-item {
+    min-width: 200px;
+  }
+
+  .courses .nav-item hr {
+    height: 60px;
+    margin-top: -55px;
+  }
+
+  .courses .nav-item a {
+    font-size: 1rem;
   }
 }
 
@@ -316,12 +368,15 @@ section {
 #course-gardening h4 {
   border-left: #f4ce22 4px solid;
 }
+
 #course-memory h4 {
   border-left: #9a4aff 4px solid;
 }
+
 #course-dance h4 {
   border-left: #47a7ff 4px solid;
 }
+
 #course-ball h4 {
   border-left: #04aa58 4px solid;
 }
@@ -331,9 +386,15 @@ section {
   color: #666666;
   margin-left: 19px;
 }
+
 .intro li {
   margin-bottom: 0.25em;
 }
+
+.course-timetable {
+  min-width: 600px;
+}
+
 .course-timetable th,
 #pricing-section th {
   font-weight: bold;
@@ -348,6 +409,7 @@ section {
 #pricing-section tr:first-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .course-timetable tr:nth-child(2n + 2),
 #pricing-section tr:nth-child(2n + 2) {
   background: #f8f8f8;
@@ -391,6 +453,7 @@ section {
   padding-left: 0%;
   padding-right: 0;
 }
+
 #pricing-section .course-name {
   font-size: 1.5em;
   padding: 20px;
@@ -401,11 +464,10 @@ section {
   border-radius: 20px 20px 0 0;
   color: white;
 }
+
 #pricing-section span.bignum {
   font-size: 1.5em;
 }
-
-
 
 #faq-section p {
   line-height: 1.7em;
@@ -432,7 +494,6 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-
 #registration-section a.btn:hover {
   background: linear-gradient(#ef383b88, #f4ce2288);
   background-clip: padding-box;
@@ -446,19 +507,19 @@ section {
 }
 
 #footer-section * {
-    color: white;
+  color: white;
 }
 
 #footer-section .row {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 #footer-section h4 {
-    margin-bottom: 1em;
-    font-weight: bold;
-    font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .footer-logo {
-    padding-right: 0;
+  padding-right: 0;
 }
