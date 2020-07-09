@@ -502,7 +502,7 @@ div.bubble-bg {
 
 #footer-section {
     background-color: rgba(28, 27, 113, 0.619792);
-    padding: 70px 0;
+    padding: 20px 0;
     margin-bottom: 0;
 }
 
@@ -510,8 +510,8 @@ div.bubble-bg {
   color: white;
 }
 
-#footer-section .row {
-  margin: 30px 0;
+#footer-section .container > .row {
+  padding: 50px 0;
 }
 
 #footer-section h4 {
@@ -522,4 +522,12 @@ div.bubble-bg {
 
 .footer-logo {
   padding-right: 0;
+}
+
+.footer-logo img {  
+  height: 4em;
+}
+
+.footer-contact p {
+  margin-bottom: 0;
 }
