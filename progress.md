@@ -62,11 +62,11 @@ https://pi-camp-2020.steamedu.tw/
 - 阿文完成CSS切版
 
 7/7 (Tue)
-- 版面微調
-- 文字修改（d1）
+- Layout edit
+- Text edit @d1
 
 7/8 (Wed)
-- 表單、課程換成可以scroll（文）
+- srollable table @0ven
 
 7/9 (Thu)
-- footer完成
+- footer done
