@@ -58,9 +58,15 @@ https://pi-camp-2020.steamedu.tw/
 7/1 (Tue)
 - html文字架構
 
-7/6 （Mon)
+7/6 (Mon)
 - 阿文完成CSS切版
 
-7/7 （Tue)
-- 版面微調
-- 文字修改（d1）
+7/7 (Tue)
+- Layout edit
+- Text edit @d1
+
+7/8 (Wed)
+- srollable table @0ven
+
+7/9 (Thu)
+- footer done
