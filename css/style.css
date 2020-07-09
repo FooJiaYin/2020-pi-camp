@@ -511,11 +511,15 @@ div.bubble-bg {
 }
 
 #footer-section .container > .row {
-  padding: 50px 0;
+  padding: 40px 0;
+}
+
+#footer-section .container > .row .row {
+  padding-bottom: 30px;
 }
 
 #footer-section h4 {
-  margin-bottom: 1em;
+  margin: 1em 0;
   font-weight: bold;
   font-size: 1.2em;
 }
