@@ -58,6 +58,12 @@ section {
   display: none;
 }
 
+@media (max-width: 920px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+
 /* HEADER */
 /* transparent variation */
 header .bg-light.transparent {
@@ -68,6 +74,11 @@ header .bg-light.transparent {
 header .bg-light.transparent *{
     color: white!important;
 }
+
+header .bg-light.transparent button {
+  display: none;
+}
+
 .transparent.navbar-light .navbar-nav .active>.nav-link, .navbar-light.transparent .navbar-nav .nav-link.active, 
 .navbar-light.transparent .navbar-nav.nav-link.show, 
 .navbar-light.transparent .navbar-nav .show>.nav-link{
