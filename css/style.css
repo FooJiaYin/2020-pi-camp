@@ -178,13 +178,8 @@ header .bg-light.transparent button {
 }
 
 /* Why do you put animation here??? */
-.feature-item:hover *, #faq-section p:hover, #faq-section p:hover *, tr:hover * {
+#faq-section p:hover, #faq-section p:hover *, tr:hover * {
   color: rgba(28, 27, 113, 0.619792) !important;
-}
-
-.bubble-bg:hover * {
-  color: rgba(28, 27, 113, 0.619792) !important;
-  font-weight: bold;
 }
 
 /* intro-section */
@@ -240,6 +235,12 @@ div.bubble-bg {
   background-position: center;
   text-align: center;
   padding-top: 25px;
+}
+
+img.location-icon {
+  height: 0.8em;
+  margin-top: -3px;
+  margin-right: 5px;
 }
 
 /* COURSE */
