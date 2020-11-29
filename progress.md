@@ -70,3 +70,6 @@ https://pi-camp-2020.steamedu.tw/
 
 7/9 (Thu)
 - footer done
+
+11/27 (Fri)
+- 寒假營隊版本修改

@@ -22,7 +22,7 @@ li {
   letter-spacing: 2px;
 }
 .navbar-brand,
-h1, h2 {
+h1, h2 ,h3 ,h4,h5 {
   font-family: open-huninn;
   font-weight: normal;
 }
@@ -243,7 +243,53 @@ img.location-icon {
   margin-right: 5px;
 }
 
-/* COURSE */
+/* Schedule */
+
+.nav-link{
+  color: black;
+}
+
+.nav-link.active{
+  color:black !important ;
+  background-color: pink !important;
+}
+
+.nav-link:hover{
+  color: black !important;
+  background-color: pink;
+}
+
+td p,th p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.scheduleTab{
+  align-self: center;
+}
+
+table.unstyledTable {
+  align-self: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px auto;
+}
+
+table.unstyledTable td, table.unstyledTable th {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+table.unstyledTable thead {
+  background: rgb(221, 221, 221);
+  border-bottom: 3px solid #444444;
+}
+
+table.unstyledTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* COURSE  */
 
 .section-title-top {
   padding-bottom: 3rem;  
@@ -256,7 +302,7 @@ img.location-icon {
 .course-tabs {
     padding-left: 10%;
     padding-right: 10%;
-  padding-top: 60px;
+    padding-top: 60px;
     border-bottom: none;
 
 }
@@ -308,8 +354,8 @@ img.location-icon {
   border-top: #04aa58 10px solid;
 }
 
-.tab-name.active+.tab-bg,
-.tab-pane.active {
+#course-section .tab-name.active+.tab-bg,
+#course-section .tab-pane.active {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 2px -20px 30px -10px;
 }
@@ -405,10 +451,6 @@ img.location-icon {
   border-left: #47a7ff 4px solid;
 }
 
-#course-ball .course-detail-title {
-  border-left: #04aa58 4px solid;
-}
-
 .course-detail-desc{
   color: #666666;
   margin-left: 19px;
@@ -447,7 +489,7 @@ img.location-icon {
   border-top: none;
 }
 
-.tab-content {
+#course-section .tab-content {
   box-shadow: rgba(0, 0, 0, 0.1) 2px 20px 30px -10px;
 }
 
